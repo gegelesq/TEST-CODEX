@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agence de Location</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">LocationPro</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#">Accueil</a></li>
+          <li class="nav-item"><a class="nav-link" href="#offres">Nos offres</a></li>
+          <li class="nav-item"><a class="nav-link" href="#reservation">Réserver</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <h1>Bienvenue chez LocationPro</h1>
+    <p>Louez voitures et biens immobiliers facilement.</p>
+  </section>
+
+  <section id="offres" class="py-5">
+    <div class="container">
+      <h2 class="mb-4 text-center">Nos offres</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card offer-card">
+            <img src="images/car.svg" class="card-img-top" alt="Voiture">
+            <div class="card-body">
+              <h5 class="card-title">Voiture Compacte</h5>
+              <p class="card-text">À partir de 30€ / jour</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card offer-card">
+            <img src="images/house.svg" class="card-img-top" alt="Maison">
+            <div class="card-body">
+              <h5 class="card-title">Maison de Vacances</h5>
+              <p class="card-text">À partir de 120€ / nuit</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card offer-card">
+            <img src="images/office.svg" class="card-img-top" alt="Bureau">
+            <div class="card-body">
+              <h5 class="card-title">Bureau Moderne</h5>
+              <p class="card-text">À partir de 80€ / jour</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="reservation" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="mb-4 text-center">Réserver</h2>
+      <form id="reservation-form" class="row g-3">
+        <div class="col-md-6">
+          <label for="name" class="form-label">Nom</label>
+          <input type="text" class="form-control" id="name" required>
+        </div>
+        <div class="col-md-6">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" class="form-control" id="email" required>
+        </div>
+        <div class="col-md-6">
+          <label for="dates" class="form-label">Dates</label>
+          <input type="text" class="form-control" id="dates" placeholder="du.. au.." required>
+        </div>
+        <div class="col-md-6">
+          <label for="choice" class="form-label">Bien choisi</label>
+          <select id="choice" class="form-select" required>
+            <option value="voiture">Voiture</option>
+            <option value="maison">Maison</option>
+            <option value="bureau">Bureau</option>
+          </select>
+        </div>
+        <div class="col-12">
+          <label for="message" class="form-label">Message</label>
+          <textarea id="message" class="form-control" rows="3"></textarea>
+        </div>
+        <div class="col-12 text-center">
+          <button type="submit" class="btn btn-primary">Envoyer</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <section id="contact" class="py-5">
+    <div class="container">
+      <h2 class="mb-4 text-center">Où nous trouver</h2>
+      <div class="ratio ratio-16x9">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.999788237694!2d2.2922926156746044!3d48.8583700792876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fdf8fd0b0b3%3A0xeaf503d9f26af3dd!2sTour%20Eiffel!5e0!3m2!1sfr!2sfr!4v1616585123456" allowfullscreen loading="lazy"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <footer class="text-center">
+    <div class="container">
+      <p>Contact: info@locationpro.fr</p>
+      <p>
+        <a href="#" class="me-2">Twitter</a>
+        <a href="#">Facebook</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
